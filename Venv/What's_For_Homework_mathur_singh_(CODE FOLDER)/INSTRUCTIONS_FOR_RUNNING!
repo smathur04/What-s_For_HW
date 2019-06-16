@@ -1,0 +1,7 @@
+Open up a bash terminal
+Enter: source Venv/bin/activate
+Enter: ipython
+Navigate your working directory to /home/ubuntu/workspace/Venv/What's_For_Homework_mathur_singh_(CODE FOLDER)
+Enter: %run maincode.py
+Navigate to http://csp5-mathur-singh-smathur.c9users.io:8080/ to see the running application
+Enjoy!

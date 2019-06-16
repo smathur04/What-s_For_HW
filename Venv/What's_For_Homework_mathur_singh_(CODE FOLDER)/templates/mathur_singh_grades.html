@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><!--The Head tag contains the link to my css stylesheet and the page title-->
+        <link href="{{ url_for('static', filename = 'css/bootstrap.css') }}" rel="stylesheet" type="text/css">  
+        <title>Grades</title>
+    </head>
+    
+    <body>
+        
+    <div class="nav nav-pills nav-fill bg-dark"><!--This block codes for the navbar at the top of each pages' screen-->
+      <nav class="nav-item"><a class="nav-link" href="login">Login</a></nav>
+      <nav class="nav-item"><a class="nav-link" href="home">Home</a></nav>
+      <nav class="nav-item"><a class="nav-link active" href="grades">Grades</a></nav>
+    </div>
+    
+    <!--Code for the Jumbotron, it specifies color, text, and background-->
+    <section class="jumbotron" style="background-image:url({{ url_for('static', filename = 'Images/jumbo.jpg') }});">
+      <center><h1>Grades</h1></center>
+    </section>
+    
+    <!--Code for the infinite campus link-->
+    <div class = "container">
+      <blockquote class="embedly-card"><h4><a href="https://icampus.dublinusd.org/campus/dublin.jsp?status=login">Dublin Unified School District Login</a></h4><p>null</p></blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </div>
+    
+    <!--Creates a footer with the same formatting as the header but with a drive and classroom link-->
+    <footer class="jumbotron" style="background-image:url({{ url_for('static', filename = 'Images/jumbo.jpg') }});">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="https://drive.google.com/drive/u/0/my-drive"><img src="{{ url_for('static', filename = 'Images/drive.png') }}" height=100 width=100></a>
+          </div>
+          <div class="col-sm-6">
+            <a href="https://classroom.google.com/u/0/h"><img class="float-right" src="{{ url_for('static', filename = 'Images/classroom.png') }}" height=100 width=100></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    </body>
+</html>
